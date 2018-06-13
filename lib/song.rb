@@ -19,8 +19,11 @@ class Song
 
   def self.genres
     clean_array = []
-    clean_array = @@genres.uniq
-    puts clean_array
+    @@genres.each do |genre|
+      if !clean_array.include?(genre)
+        clean_array << genre
+      end
+    end
   end
 
   def self.artists
