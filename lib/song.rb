@@ -22,7 +22,7 @@ class Song
   end
 
   def self.artists
-    puts "#{@@artists.uniq}"
+    puts "#{@@artists.uniq!}"
   end
 
   def self.genre_count
