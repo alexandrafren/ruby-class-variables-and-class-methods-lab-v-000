@@ -35,6 +35,7 @@ class Song
       if genre_hash[genre_count] = genre_count
         genre_hash[genre_count] += 1
       end
+    end
   end
 
 end
