@@ -24,4 +24,12 @@ class Song
   def self.artists
     puts "#{@@artists.uniq}"
   end
+
+  def self.genre_count
+    genre_hash = {}
+    if genre_hash.include?(genre)
+      genre_hash[genre] += 1
+    else
+      genre_hash = genre
+      genre_hash[genre] += 1
 end
