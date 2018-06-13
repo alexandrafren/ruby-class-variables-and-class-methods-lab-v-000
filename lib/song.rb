@@ -18,7 +18,9 @@ class Song
   end
 
   def self.genres
-    puts @@genres.uniq
+    clean_array = []
+    clean_array = @@genres.uniq
+    puts clean_array
   end
 
   def self.artists
