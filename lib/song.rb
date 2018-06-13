@@ -16,6 +16,6 @@ class Song
   end
 
   def self.genres
-
+    puts "#{@@genres.uniq}"
 
 end
