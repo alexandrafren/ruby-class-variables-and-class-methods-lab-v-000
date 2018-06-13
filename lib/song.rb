@@ -39,6 +39,7 @@ class Song
 
   def self.genre_count
     genre_hash = {}
+    genre_hash[self.genres] = 0
     @@genres.each do |genre|
       if !genre_hash.include?(genre)
         genre_hash[:genre] = 0
