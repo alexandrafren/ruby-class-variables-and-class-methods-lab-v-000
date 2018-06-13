@@ -24,6 +24,7 @@ class Song
         clean_array << genre
       end
     end
+    return clean_array
   end
 
   def self.artists
