@@ -39,8 +39,7 @@ class Song
 
   def self.genre_count
     genre_hash = {}
-    genre_hash[self.genres]
-    genre_hash[self.genres] = 0
+    genre_hash = self.genres
   end
 
 end
