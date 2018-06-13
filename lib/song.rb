@@ -39,12 +39,13 @@ class Song
 
   def self.genre_count
     genre_hash = {}
-    genre_array = self.genres.join(",").split(",")
-    genre_hash[genre_array] = 0
-    #@@genres.each do |genre|
-      #genre_hash[genre]
-    #end
-    return genre_hash
+    @@genres.each do |genre|
+      if !genre_hash.include?(genre)
+      genre_hash[genre]
+      end
+      genre_hash += 1
+    end
   end
+
 
 end
