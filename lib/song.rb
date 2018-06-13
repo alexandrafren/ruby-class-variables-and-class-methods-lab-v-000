@@ -41,6 +41,7 @@ class Song
     genre_hash = {}
     genre_hash = self.genres
     @@genres.each do |genre|
+      genre_hash[genre] = 0
       genre_hash[genre] += 1
     end
     return genre_hash
