@@ -22,5 +22,6 @@ class Song
   end
 
   def self.artists
+    puts "#{@@artists.uniq}"
   end
 end
