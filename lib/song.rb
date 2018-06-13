@@ -18,7 +18,7 @@ class Song
   end
 
   def self.genres
-    puts @@genres.uniq
+    puts @@genres.unique
   end
 
   def self.artists
