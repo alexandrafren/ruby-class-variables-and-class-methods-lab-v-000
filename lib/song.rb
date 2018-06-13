@@ -40,7 +40,7 @@ class Song
   def self.genre_count
     genre_hash = {}
     genre_array = self.genres.to_s.split
-    genre_hash[] = 0
+    genre_hash[genre_array] = 0
     #@@genres.each do |genre|
       #genre_hash[genre]
     #end
